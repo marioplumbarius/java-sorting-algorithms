@@ -16,8 +16,9 @@ Implementations of sorting algorithms using Java.
 Import the file [code-style.xml](code-style.xml) into your IDE.
 
 ## Test
+Coverage report will be located at `build/reports/cobertura/index.html`.
 ```bash
-gradle clean test
+gradle clean coberturaCheck test
 ```
 
 ## Build

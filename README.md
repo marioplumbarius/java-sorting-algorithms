@@ -1,6 +1,10 @@
 # java-sorting-algorithms
 Implementations of sorting algorithms using Java.
 
+[![Build Status](https://travis-ci.org/marioluan/java-sorting-algorithms.svg?branch=master)](https://travis-ci.org/marioluan/java-sorting-algorithms)
+
+--
+
 **Pre-requisites:**
 - java (v1.8)
 - gradle (v3.3)

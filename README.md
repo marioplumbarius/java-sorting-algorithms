@@ -11,8 +11,8 @@ Implementations of sorting algorithms using Java.
 - java (v1.8)
 - gradle (v3.3)
 
-## Code style (eclipse users only)
-Import the file [code-style.xml](code-style.xml) into your IDE.
+## Code style & formatter (eclipse users only)
+Import the files [code-style.xml](code-style.xml) and [formatter.xml](formatter.xml) into your IDE.
 
 ## Test
 Coverage report will be located at `build/reports/cobertura/index.html`.

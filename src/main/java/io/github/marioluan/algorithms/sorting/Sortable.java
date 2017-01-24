@@ -1,7 +1,7 @@
 package io.github.marioluan.algorithms.sorting;
 
 /**
- * Abstract layer for sorting algorithms' implementation.
+ * Abstract layer with helper methods for sorting algorithms' implementation.
  * 
  * @author marioluan
  */
@@ -15,7 +15,7 @@ public abstract class Sortable {
      * @return returns whether a is lesser than b
      */
     @SuppressWarnings({ "rawtypes", "unchecked" })
-    static boolean less(Comparable a, Comparable b) {
+    protected static boolean less(Comparable a, Comparable b) {
         return a.compareTo(b) < 0;
     }
 
@@ -27,7 +27,7 @@ public abstract class Sortable {
      * @param j
      */
     @SuppressWarnings("rawtypes")
-    static void swap(Comparable[] a, int i, int j) {
+    protected static void swap(Comparable[] a, int i, int j) {
         Comparable copy = a[i];
         a[i] = a[j];
         a[j] = copy;
@@ -43,7 +43,8 @@ public abstract class Sortable {
      * @return returns the index from the element with the minimum value
      */
     @SuppressWarnings("rawtypes")
-    static int findMin(Comparable[] a, int lowerBound, int upperBound) {
+    protected static int findMin(Comparable[] a, int lowerBound,
+            int upperBound) {
         int min = lowerBound;
         for (int i = lowerBound + 1; i < upperBound; i++)
             if (less(a[i], a[min]))

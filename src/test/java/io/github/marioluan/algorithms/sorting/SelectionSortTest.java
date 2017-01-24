@@ -24,7 +24,7 @@ public class SelectionSortTest {
     private int                 n      = 0;
 
     {
-        describe("InsertionSort", () -> {
+        describe("SelectionSort", () -> {
             describe(".sort", () -> {
 
                 describe("when array is small", () -> {

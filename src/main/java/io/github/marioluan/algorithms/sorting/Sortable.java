@@ -65,4 +65,20 @@ public abstract class Sortable {
 
         return min;
     }
+
+    /**
+     * Make a copy of items from array a within lo and hi bounds into array aux.
+     *
+     * @param a
+     * @param aux
+     * @param lo
+     * @param hi
+     */
+    @SuppressWarnings("rawtypes")
+    protected static void copy(Comparable[] a, Comparable[] aux, int lo,
+            int hi) {
+        for (int i = lo; i <= hi; i++)
+            aux[i] = a[i];
+
+    }
 }

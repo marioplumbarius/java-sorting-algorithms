@@ -47,7 +47,7 @@ public abstract class Sortable {
     }
 
     /**
-     * Finds and returns the index from the minimum item from array a within
+     * Find and return the index from the minimum item from array a within
      * lowerBound and upperBound.
      * 
      * @param a

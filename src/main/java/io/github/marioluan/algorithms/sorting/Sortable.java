@@ -32,4 +32,22 @@ public abstract class Sortable {
         a[i] = a[j];
         a[j] = copy;
     }
+
+    /**
+     * Finds and returns the index from the minimum item from array a within
+     * lowerBound and upperBound.
+     * 
+     * @param a
+     * @param lowerBound
+     * @param upperBound
+     * @return returns the index from the element with the minimum value
+     */
+    @SuppressWarnings("rawtypes")
+    static int findMin(Comparable[] a, int lowerBound, int upperBound) {
+        int min = lowerBound;
+        for (int i = lowerBound + 1; i < upperBound && less(a[i], a[min]); i++)
+            min = i;
+
+        return min;
+    }
 }

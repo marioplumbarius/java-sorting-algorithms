@@ -35,6 +35,7 @@ gradle clean assemble
 - [Insertion Sort](https://github.com/marioluan/java-sorting-algorithms/blob/master/src/main/java/io/github/marioluan/algorithms/sorting/InsertionSort.java)
 - [Selection Sort](https://github.com/marioluan/java-sorting-algorithms/blob/master/src/main/java/io/github/marioluan/algorithms/sorting/SelectionSort.java)
 - [Shellsort](https://github.com/marioluan/java-sorting-algorithms/blob/master/src/main/java/io/github/marioluan/algorithms/sorting/ShellSort.java)
+- [Merge Sort](https://github.com/marioluan/java-sorting-algorithms/blob/master/src/main/java/io/github/marioluan/algorithms/sorting/MergeSort.java)
 
 ## References
 - [https://www.coursera.org/learn/algorithms-part1](https://www.coursera.org/learn/algorithms-part1)

@@ -17,13 +17,13 @@ Import the files [code-style.xml](code-style.xml) and [formatter.xml](formatter.
 ## Test
 Coverage report will be located at `build/reports/cobertura/index.html`.
 ```bash
-gradle clean coberturaCheck test
+gradle clean coberturaCheck testClasses
 ```
 
 ## Code style
 You may run this command to automatically detect code style issues.
 ```bash
-gradle check
+gradle checkstyleTest
 ```
 
 ## Build

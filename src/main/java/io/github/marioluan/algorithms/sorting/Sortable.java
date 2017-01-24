@@ -45,8 +45,9 @@ public abstract class Sortable {
     @SuppressWarnings("rawtypes")
     static int findMin(Comparable[] a, int lowerBound, int upperBound) {
         int min = lowerBound;
-        for (int i = lowerBound + 1; i < upperBound && less(a[i], a[min]); i++)
-            min = i;
+        for (int i = lowerBound + 1; i < upperBound; i++)
+            if (less(a[i], a[min]))
+                min = i;
 
         return min;
     }

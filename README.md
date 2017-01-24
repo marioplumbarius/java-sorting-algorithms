@@ -20,6 +20,12 @@ Coverage report will be located at `build/reports/cobertura/index.html`.
 gradle clean coberturaCheck test
 ```
 
+## Code style
+You may run this command to automatically detect code style issues.
+```bash
+gradle check
+```
+
 ## Build
 ```bash
 gradle clean assemble

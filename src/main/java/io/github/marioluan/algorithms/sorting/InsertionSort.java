@@ -12,7 +12,7 @@ package io.github.marioluan.algorithms.sorting;
  * 
  * @author marioluan
  */
-public final class InsertionSort {
+public final class InsertionSort extends Sortable {
 
     private InsertionSort() {
     }
@@ -29,31 +29,5 @@ public final class InsertionSort {
         for (int i = lo; i < hi + 1; i++)
             for (int j = i; j > lo && less(a[j], a[j - 1]); j--)
                 swap(a, j, j - 1);
-    }
-
-    /**
-     * Check whether {@link Comparable a} is lesser than {@link Comparable b}.
-     *
-     * @param a
-     * @param b
-     * @return returns whether a is lesser than b
-     */
-    @SuppressWarnings({ "rawtypes", "unchecked" })
-    private static boolean less(Comparable a, Comparable b) {
-        return a.compareTo(b) < 0;
-    }
-
-    /**
-     * Swap item in position i by item in position j from array {@link a}.
-     *
-     * @param a
-     * @param i
-     * @param j
-     */
-    @SuppressWarnings("rawtypes")
-    private static void swap(Comparable[] a, int i, int j) {
-        Comparable copy = a[i];
-        a[i] = a[j];
-        a[j] = copy;
     }
 }

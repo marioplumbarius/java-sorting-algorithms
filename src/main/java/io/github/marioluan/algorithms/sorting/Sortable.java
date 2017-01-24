@@ -20,6 +20,19 @@ public abstract class Sortable {
     }
 
     /**
+     * Check whether {@link Comparable a} is lesser or equal to
+     * {@link Comparable b}.
+     *
+     * @param a
+     * @param b
+     * @return returns whether a is lesser or equal to b
+     */
+    @SuppressWarnings({ "rawtypes", "unchecked" })
+    protected static boolean lessOrEqual(Comparable a, Comparable b) {
+        return a.compareTo(b) < 1;
+    }
+
+    /**
      * Swap item in position i by item in position j from array {@link a}.
      *
      * @param a

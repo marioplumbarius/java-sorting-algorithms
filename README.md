@@ -15,15 +15,11 @@ Implementations of sorting algorithms using Java.
 Import the files [code-style.xml](code-style.xml) and [formatter.xml](formatter.xml) into your IDE.
 
 ## Test
-Coverage report will be located at `build/reports/cobertura/index.html`.
 ```bash
-gradle clean coberturaCheck testClasses
-```
-
-## Code style
-You may run this command to automatically detect code style issues.
-```bash
-gradle checkstyleTest
+gradle clean coberturaCheck check
+# Test summary will be located at `build/reports/tests/test/index.html`
+# Coverage report will be located at `build/reports/cobertura/index.html`.
+# Code style issues report will be located at `build/reports/checkstyle/main.html`
 ```
 
 ## Build

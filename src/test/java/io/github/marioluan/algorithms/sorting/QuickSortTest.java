@@ -24,7 +24,7 @@ public class QuickSortTest {
     private int                 n      = 0;
 
     {
-        describe("MergeSortRecursive", () -> {
+        describe("QuickSort", () -> {
             describe(".sort", () -> {
 
                 describe("when array is small", () -> {

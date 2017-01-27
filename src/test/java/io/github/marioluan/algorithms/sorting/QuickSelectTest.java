@@ -17,7 +17,7 @@ import io.github.marioluan.algorithms.test.support.SupportHelper;
 
 @SuppressWarnings("rawtypes")
 @RunWith(Spectrum.class)
-public class QuiSelectTest {
+public class QuickSelectTest {
 
     private static final Random RANDOM = new Random();
     private Comparable[]        array  = null;
@@ -26,7 +26,7 @@ public class QuiSelectTest {
     private int                 k      = -1;
 
     {
-        describe("MergeSortRecursive", () -> {
+        describe("QuickSelect", () -> {
             describe(".select", () -> {
 
                 describe("when array is small", () -> {

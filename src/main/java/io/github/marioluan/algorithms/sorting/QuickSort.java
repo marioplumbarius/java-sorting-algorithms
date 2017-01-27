@@ -17,7 +17,7 @@ import edu.princeton.cs.algs4.StdRandom;
 @SuppressWarnings("rawtypes")
 public final class QuickSort extends Sortable {
 
-    private final static int CUTOFF = 10;
+    private static final int CUTOFF = 10;
 
     /**
      * Sort the array a.

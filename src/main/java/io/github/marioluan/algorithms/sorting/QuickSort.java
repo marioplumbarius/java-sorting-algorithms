@@ -41,7 +41,7 @@ public final class QuickSort extends Sortable {
     }
 
     /**
-     * Recursively sort the array a within a and hi bounds.
+     * Recursively sort the array a within lo and hi bounds.
      * 
      * @param a
      *            the array to be sorted

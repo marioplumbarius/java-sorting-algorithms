@@ -1,6 +1,7 @@
 package io.github.marioluan.algorithms.sorting;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 import static com.greghaskins.spectrum.Spectrum.describe;
 import static com.greghaskins.spectrum.Spectrum.beforeEach;
 import static com.greghaskins.spectrum.Spectrum.it;
@@ -16,29 +17,32 @@ import io.github.marioluan.algorithms.test.support.SupportHelper;
 
 @SuppressWarnings("rawtypes")
 @RunWith(Spectrum.class)
-public class QuickSortTest {
+public class QuiSelectTest {
 
     private static final Random RANDOM = new Random();
     private Comparable[]        array  = null;
     private Comparable[]        clone  = null;
     private int                 n      = 0;
+    private int                 k      = -1;
 
     {
         describe("MergeSortRecursive", () -> {
-            describe(".sort", () -> {
+            describe(".select", () -> {
 
                 describe("when array is small", () -> {
                     beforeEach(() -> {
                         n = RANDOM.nextInt(7) + 1;
                         array = SupportHelper.buildRandomArray(n);
                         clone = array.clone();
+                        k = RANDOM.nextInt(n);
                     });
 
                     it("sorts it", () -> {
-                        Arrays.sort(clone);
-                        QuickSort.sort(array);
+                        assertTrue(n >= 0);
 
-                        assertArrayEquals(array, clone);
+                        Arrays.sort(clone);
+
+                        assertEquals(clone[k], QuickSelect.select(array, k));
                     });
                 });
 
@@ -47,13 +51,15 @@ public class QuickSortTest {
                         n = RANDOM.nextInt((int) Math.pow(10, 6)) + 1;
                         array = SupportHelper.buildRandomArray(n);
                         clone = array.clone();
+                        k = RANDOM.nextInt(n);
                     });
 
                     it("sorts it", () -> {
-                        Arrays.sort(clone);
-                        QuickSort.sort(array);
+                        assertTrue(n >= 0);
 
-                        assertArrayEquals(array, clone);
+                        Arrays.sort(clone);
+
+                        assertEquals(clone[k], QuickSelect.select(array, k));
                     });
                 });
 
@@ -62,13 +68,15 @@ public class QuickSortTest {
                         array = new Comparable[] { 1, 2, 3, 6, 9, 5, 10, 4, 11,
                                 13, 14, 15, 16, 17, 18, 19, 20 };
                         clone = array.clone();
+                        k = RANDOM.nextInt(array.length);
                     });
 
                     it("sorts it", () -> {
-                        Arrays.sort(clone);
-                        QuickSort.sort(array);
+                        assertTrue(n >= 0);
 
-                        assertArrayEquals(array, clone);
+                        Arrays.sort(clone);
+
+                        assertEquals(clone[k], QuickSelect.select(array, k));
                     });
                 });
 

@@ -61,16 +61,13 @@ public final class ThreeWayQuickSort extends Sortable {
         // moving keys
         while (i <= gt) {
             int cmp = a[i].compareTo(v);
-            if (cmp < 0) {
-                // makes sure all items to the right are greater than it
+            if (cmp < 0)
                 swap(a, lt++, i++);
-            } else if (cmp > 0) {
-                // makes sure all items to the right are greater than it
+            else if (cmp > 0)
                 swap(a, i, gt--);
-            } else {
-                // this happens when we found duplicate key
-                i++;
-            }
+            else
+                i++; // this happens when we found duplicate keys. E.g.: first round a[i] == v.
+            
         }
 
         sort(a, lo, lt - 1);

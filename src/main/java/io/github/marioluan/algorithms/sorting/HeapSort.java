@@ -1,7 +1,9 @@
 package io.github.marioluan.algorithms.sorting;
 
 /**
- * In-place, non stable implementation of heap sort algorithm.
+ * In-place, non stable implementation of heap sort algorithm.<br>
+ * The only sorting algorithm which is both in-place and O(n log n) in<br>
+ * worst-case.
  * <strong>Time complexity:</strong> O(n log n)
  * <strong>Space complexity:</strong> O(1)
  * 

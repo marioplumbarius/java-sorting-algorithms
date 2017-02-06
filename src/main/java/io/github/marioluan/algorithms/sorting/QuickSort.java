@@ -4,8 +4,8 @@ import edu.princeton.cs.algs4.StdRandom;
 
 /**
  * Recursive in-place, non stable implementation of quick sort algorithm. <br>
- * <strong>Time complexity:</strong> O(N log N) <br>
- * <strong>Space complexity:</strong> O(??) <br>
+ * <strong>Time complexity:</strong> O(N log N) on average<br>
+ * <strong>Space complexity:</strong> O(log n) on average<br>
  * References:
  * <ul>
  * <li><a>https://www.coursera.org/learn/algorithms-part1</a>.</li>

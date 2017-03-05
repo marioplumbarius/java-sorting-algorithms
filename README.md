@@ -4,6 +4,7 @@ Implementations of sorting algorithms using Java.
 [![Build Status](https://travis-ci.org/marioluan/java-sorting-algorithms.svg?branch=master)](https://travis-ci.org/marioluan/java-sorting-algorithms)
 [![Coverage Status](https://coveralls.io/repos/github/marioluan/java-sorting-algorithms/badge.svg?branch=master)](https://coveralls.io/github/marioluan/java-sorting-algorithms?branch=master)
 [![Dependency Status](https://www.versioneye.com/user/projects/58858fedb194d4003d528a95/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/58858fedb194d4003d528a95)
+[![codebeat badge](https://codebeat.co/badges/382c573f-2c4e-4827-8b9d-6849394414f0)](https://codebeat.co/projects/github-com-marioluan-java-sorting-algorithms)
 
 --
 

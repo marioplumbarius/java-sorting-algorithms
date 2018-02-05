@@ -35,12 +35,12 @@ gradle clean assemble
 - [Selection Sort](https://github.com/marioluan/java-sorting-algorithms/blob/master/src/main/java/io/github/marioluan/algorithms/sorting/SelectionSort.java)
 - [Shellsort](https://github.com/marioluan/java-sorting-algorithms/blob/master/src/main/java/io/github/marioluan/algorithms/sorting/ShellSort.java)
 - Merge Sort
--- [Recursive](https://github.com/marioluan/java-sorting-algorithms/blob/master/src/main/java/io/github/marioluan/algorithms/sorting/MergeSortRecursive.java)
--- [Iterative](https://github.com/marioluan/java-sorting-algorithms/blob/master/src/main/java/io/github/marioluan/algorithms/sorting/MergeSortIterative.java)
+  - [Recursive](https://github.com/marioluan/java-sorting-algorithms/blob/master/src/main/java/io/github/marioluan/algorithms/sorting/MergeSortRecursive.java)
+  - [Iterative](https://github.com/marioluan/java-sorting-algorithms/blob/master/src/main/java/io/github/marioluan/algorithms/sorting/MergeSortIterative.java)
 - Quick Sort
--- [Quick Sort](https://github.com/marioluan/java-sorting-algorithms/blob/master/src/main/java/io/github/marioluan/algorithms/sorting/QuickSort.java)
--- [Quick Select](https://github.com/marioluan/java-sorting-algorithms/blob/master/src/main/java/io/github/marioluan/algorithms/sorting/QuickSelect.java)
--- [3-way Partitioning](https://github.com/marioluan/java-sorting-algorithms/blob/master/src/main/java/io/github/marioluan/algorithms/sorting/ThreeWayQuickSort.java)
+  - [Quick Sort](https://github.com/marioluan/java-sorting-algorithms/blob/master/src/main/java/io/github/marioluan/algorithms/sorting/QuickSort.java)
+  - [Quick Select](https://github.com/marioluan/java-sorting-algorithms/blob/master/src/main/java/io/github/marioluan/algorithms/sorting/QuickSelect.java)
+  - [3-way Partitioning](https://github.com/marioluan/java-sorting-algorithms/blob/master/src/main/java/io/github/marioluan/algorithms/sorting/ThreeWayQuickSort.java)
 - [Heap Sort](https://github.com/marioluan/java-sorting-algorithms/blob/master/src/main/java/io/github/marioluan/algorithms/sorting/HeapSort.java)
 
 ## References

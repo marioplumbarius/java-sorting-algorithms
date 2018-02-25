@@ -1,12 +1,33 @@
 version: '3'
 services:
-  cloud9:
-    build: .
+  intellij:
+    build:
+      context: .
+      dockerfile: Dockerfile-intellij
+    environment:
+      - DISPLAY=$DISPLAY
     volumes:
-      - /workplace/mariodes/github/java-sorting-algorithms/:/workspace/java-sorting-algorithms/
-      - gradle_cache:/workspace/java-sorting-algorithms/.gradle
-    ports:
-      - 80:80
-      - 3000:3000
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./config:$APP_ROOT/config
+      - ./src:$APP_ROOT/src
+      - ./build.gradle:$APP_ROOT/build.gradle
+      - ./settings.gradle:$APP_ROOT/settings.gradle
+      - gradle_cache:$APP_ROOT/.gradle
+      - idea_cache:/root/.IdeaIC2017.3
+      - java_cache:/root/.java
+    working_dir: $APP_ROOT
+    command: /usr/share/intellij/bin/idea.sh
+  gradle:
+    image: gradle:4.5.1-jdk8-alpine
+    volumes:
+      - ./config:$APP_ROOT/config
+      - ./src:$APP_ROOT/src
+      - ./build.gradle:$APP_ROOT/build.gradle
+      - ./settings.gradle:$APP_ROOT/settings.gradle
+      - gradle_cache:$APP_ROOT/.gradle
+    working_dir: $APP_ROOT
+    command: gradle
 volumes:
   gradle_cache:
+  idea_cache:
+  java_cache:
